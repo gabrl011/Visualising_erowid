@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<title>Visualising Erowid</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- FOTO DE ABAJO (fija/estática) -->
+  <div class="bg-fixed" aria-hidden="true">
+    <!-- Reemplaza por tu imagen de fondo estática -->
+    <img src="img/drugs.png" alt="foto estática">
+  </div>
+
+  <div class="pagina">
+
+    <!-- portada (arriba/transparencia) -->
+    <div class="portada">
+      <img src="img/fondo.png" alt="Fondo colorido">
+      <div class="titulo">El internet de las drogas: Visualising Erowid</div>
+      <div class="grupo">
+        <b>Grupo 1</b>
+        Joyce Blamberg | Gilat Brodsky | Renata Gil | Trinidad Undurraga | Gaby Venegas | Montserrat Yáñez
+      </div>
+    </div>
+
+    <!-- intro -->
+    <div class="seccion">
+      Visualising Erowid es una página que <b>transforma más de 20.000 relatos anónimos</b> sobre experiencias con
+      sustancias psicoactivas en <b>visualizaciones interactivas</b>. A través del análisis y procesamiento computacional
+      de datos, el proyecto convierte información compleja en una narrativa visual clara y accesible.
+    </div>
+
+    <!-- menú -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#autora">Autora</a></li>
+        <li><a href="#origen1">¿Cómo surge?</a></li>
+        <li><a href="#Lev">Principios Lev</a></li>
+        <li><a href="#metodología">Metodología</a></li>
+      </ul>
+    </nav>
+
+    <!-- autora -->
+    <section id="autora" class="seccion">
+      <div class="fila">
+        <div class="foto">
+          <img src="img/Anita_Hardon.png" alt="Anita Hardon">
+        </div>
+        <div class="texto">
+          <h2>Anita Hardon</h2>
+          <p class="parrafo-autora">Autora, investigadora y académica de antropología médica y digital en la Universidad de Ámsterdam, Países Bajos.</p>
+          <p class="parrafo-autora">Ha participado en grandes estudios multisituados e interdisciplinarios sobre inmunización, nuevas tecnologías reproductivas, medicamentos contra el VIH y sustancias químicas.</p>
+          <p class="parrafo-autora">Su equipo integra programadores, diseñadores de visualización, antropólogos y especialistas en datos.</p>
+          <p class="parrafo-redondeado">Su prioridad es comunicar y visualizar los resultados de sus investigaciones para aportar a especialistas en salud y figuras políticas.</p>
+        </div>
+
+        <img src="img/gif-chemical-youth.gif" class="gif-chemical" width="1000" alt="página autora">
+        <div class="rectangulo">
+          <h2 class="chemical-youth">Chemical Youth</h2>
+          <div class="dos-columnas">
+    <p>Equipo de investigación que estudian el uso generalizado de sustancias químicas desde la perspectiva de las y los jóvenes.</p>
+    
+    <p>A través de la visualización de información, presentan esta página web en donde se exponen los resultados de los estudios según diferentes clasificaciones.</p>
+  </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- cómo surge -->
+
+  <section class="origen" id="origen1">
+  
+      <div class="rectangulo-interno-1">
+        <h2>¿Cómo surge?</h2>
+        <p>A partir de un trabajo de investigación del equipo Chemical Youth (Universidad de Ámsterdam) sobre Erowid.org (activa desde 1995). Es una plataforma creada por usuarios con información farmacológica, química, botánica y médica junto a <b>más de 20.000 reportes</b> de experiencias con sustancias psicoactivas. Allí se construye conocimiento colectivo fuera de la esfera científica tradicional.</p>
+      </div>
+  
+      <div class="rectangulo-interno-2">
+        <h2>Objetivo</h2>
+        <p>Visualizar y analizar cómo las personas reportan sus experiencias con drogas, verificando patrones reales de consumo y explorar cómo la antropología digital puede acercarse a estos fenómenos.</p>
+      </div>
+
+  </section>
+
+    <!-- carrusel -->
+
+<div class="slide">
+            <div class="slide-inner">
+              <h3 class="slide-titulo">¿Qué nos muestra Visualising Erowid?</h3>
+                <input class="slide-open" type="radio" id="slide-1" 
+                      name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="img/carrusel_1.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/carrusel_2.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="img/carrusel_3.png">
+                </div>
+                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-3">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    <!-- carrusel: https://www.migueltroyano.com/css/carrusel-imagenes-html-css/ -->
+
+    <!-- Lev -->
+
+    <section id="Lev" class="seccion">
+      <div class="fila">
+        <div class="foto">
+          <img id="img-lev.png" src="img/Lev_Manovich.png" alt="Lev">
+        </div>
+        <div class="texto-lev">
+          <h2>Principios de Lev</h2>
+          <p class="parrafo-lev">En su libro “The Language of New Media” (2001), Lev Manovich identifica cinco principios que definen a los nuevos medios digitales. Estos principios muestran cómo se diferencian de los medios tradicionales y explican su forma de funcionar en el entorno digital.</p>
+
+          <img id="palabras" src="img/Palabras.png" alt="palabras">
+        </div>
+
+          <div class="contenedor">
+             <div class="recuadro rojo">
+               <p class="info-lev">La información no se muestra igual para todos, sino que se va recorriendo de acuerdo al interés del usuario </p>
+             </div>
+             <div class="recuadro celeste">
+               <p class="info-lev">Todos los relatos son convertidos en datos digitales que pueden ser procesados computacionalmente.</p>
+             </div>
+             <div class="recuadro morado">
+               <p class="info-lev">Cada gráfico funciona como módulo independiente que se puede combinar o leer por separado.</p>
+             </div>
+             <div class="recuadro amarillo">
+               <p class="info-lev">Se usan algoritmos para extraer palabras, calcular frecuencias y generar redes automáticamente.</p>
+             </div>
+          </div>
+
+    </section>
+
+    <!-- diagrama -->
+    <section id="metodología" class="seccion">
+      <h2>Diagrama Metodológico</h2>
+      <div id="Metodologia"></div>
+
+      <script type="text/javascript">
+
+        var myChart = echarts.init(document.getElementById('Metodologia'));
+        
+        myChart.showLoading();
+
+        // COLORES
+        const colorIntro = '#E1F74F'; 
+        const colorEtapa1 = '#66E6E8'; 
+        const colorEtapa2 = '#FF59DB'; 
+        const colorEtapa3 = '#FF5A5A'; 
+
+        const sizeFase = 180; 
+        const sizeTool = 110; 
+
+        const flowData = {
+            categories: [
+                { name: 'Intro', itemStyle: { color: colorIntro } },
+                { name: 'Etapa 1', itemStyle: { color: colorEtapa1 } },
+                { name: 'Etapa 2', itemStyle: { color: colorEtapa2 } },
+                { name: 'Etapa 3', itemStyle: { color: colorEtapa3 } }
+            ],
+            nodes: [
+                // INTRO
+                { 
+                    name: 'Metodológico Exploratorio - Visual', 
+                    shortName: 'INTRO',
+                    value: 10, category: 0, 
+                    symbolSize: sizeFase, fixed: true, x: 70, y: 180, 
+                    tooltipInfo: 'INTRO<hr>Metodológico Exploratorio – Visual – basado en datos.<br><br>El proyecto no parte de una hipótesis cerrada, sino que busca descubrir patrones, relaciones y significados dentro de los archivos de testimonios sobre experiencias con sustancias en Erowid.' 
+                },
+                // ETAPA 1
+                { 
+                    name: 'Etapa 1: Recolección y Estructuración de datos', 
+                    shortName: 'Etapa 1',
+                    value: 10, category: 1, 
+                    symbolSize: sizeFase, fixed: true, x: 320, y: 180, 
+                    tooltipInfo: '1: Recolección y Estructuración de datos<hr>Extracción de testimonios: desde la base de datos de Erowid Experience Vaults.<br><br>Procesamiento del texto: mediante técnicas de text mining, análisis semántico y clasificación temática.'
+                },
+                // HERRAMIENTAS ETAPA 1
+                { name: 'Extracción: Python, R, librerías, NLTK, spaCy, stringr', shortName: 'Extracción de Testimonios', value: 5, category: 1, symbolSize: sizeTool, fixed: true, x: 270, y: 400, tooltipInfo: 'Herramientas de Extracción: Python, R, librerías, NLTK, spaCy, stringr.' },
+                { name: 'Análisis de texto: spaCy, NLTK, scikit-learn, gensim, NetworkX o igraph.', shortName: 'Análisis de Texto', value: 5, category: 1, symbolSize: sizeTool, fixed: true, x: 420, y: 400, tooltipInfo: 'Herramientas de Análisis de texto: spaCy, NLTK, scikit-learn, gensim. Relaciones entre términos: NetworkX o igraph.' },
+
+                // ETAPA 2
+                { 
+                    name: 'Etapa 2: Análisis cualitativo y cuantitativo combinado', 
+                    shortName: 'Etapa 2',
+                    value: 10, category: 2, 
+                    symbolSize: sizeFase, fixed: true, x: 620, y: 180, 
+                    tooltipInfo: '2: Análisis cualitativo y cuantitativo combinado<hr>Se aplican métodos computacionales (cuantitativos) para identificar frecuencias, temas y emociones.<br><br>Se interpreta con una mirada cualitativa, reconociendo la carga subjetiva y narrativa de cada experiencia.' 
+                },
+                // HERRAMIENTAS ETAPA 2
+                { name: 'Visualizar y analizar redes: Gephi.', shortName: 'Redes (Gephi)', value: 5, category: 2, symbolSize: sizeTool, fixed: true, x: 570, y: 400, tooltipInfo: 'Herramientas para Visualizar y analizar redes: Gephi.' },
+                { name: 'Analizar series de tiempo: pandas, statsmodels, Prophet.', shortName: 'Series de Tiempo', value: 5, category: 2, symbolSize: sizeTool, fixed: true, x: 720, y: 400, tooltipInfo: 'Herramientas para Analizar series de tiempo: pandas, statsmodels, Prophet.' },
+
+                // ETAPA 3
+                { 
+                    name: 'Etapa 3: Visualización como método de investigación', 
+                    shortName: 'Etapa 3',
+                    value: 10, category: 3, 
+                    symbolSize: sizeFase, fixed: true, x: 920, y: 180, 
+                    tooltipInfo: '3: Visualización como método de investigación<hr>Las visualizaciones funcionan como una forma de pensamiento visual o "Visual Inquiry".<br><br>La visualización no es solo un resultado, sino parte del proceso de análisis.<br><br>Se utiliza para hacer visible lo invisible: los estados emocionales, la intensidad de las experiencias, los contextos de consumo, etc.' 
+                },
+                // HERRAMIENTAS ETAPA 3
+                { name: 'Visualizaciones web interactivas: D3.js, Plotly, Dash, Streamlit o Vega-Lite.', shortName: 'Visualizaciones Web', value: 5, category: 3, symbolSize: sizeTool, fixed: true, x: 850, y: 400, tooltipInfo: 'Herramientas de Visualización web interactivas: D3.js, Plotly, Dash, Shiny, Streamlit o Vega-Lite.' },
+                { name: 'Organizar datos cualitativos: NVivo, Atlas.ti, R Markdown, Jupyter Notebook.', shortName: 'Datos Cualitativos', value: 5, category: 3, symbolSize: sizeTool, fixed: true, x: 1020, y: 400, tooltipInfo: 'Herramientas para Organizar datos cualitativos: NVivo, Atlas.ti o MAXQDA. Integrar reflexión etnográfica: Jupyter Notebook o R Markdown.' }
+            ],
+            links: [
+                { source: 'Metodológico Exploratorio - Visual', target: 'Etapa 1: Recolección y Estructuración de datos', value: 1 },
+                { source: 'Etapa 1: Recolección y Estructuración de datos', target: 'Etapa 2: Análisis cualitativo y cuantitativo combinado', value: 1 },
+                { source: 'Etapa 2: Análisis cualitativo y cuantitativo combinado', target: 'Etapa 3: Visualización como método de investigación', value: 1 },
+
+
+                { source: 'Etapa 1: Recolección y Estructuración de datos', target: 'Extracción: Python, R, librerías, NLTK, spaCy, stringr', curveness: 0.15, value: 2 },
+                { source: 'Etapa 1: Recolección y Estructuración de datos', target: 'Análisis de texto: spaCy, NLTK, scikit-learn, gensim, NetworkX o igraph.', curveness: 0.15, value: 2 },
+
+                { source: 'Etapa 2: Análisis cualitativo y cuantitativo combinado', target: 'Visualizar y analizar redes: Gephi.', curveness: 0.15, value: 3 },
+                { source: 'Etapa 2: Análisis cualitativo y cuantitativo combinado', target: 'Analizar series de tiempo: pandas, statsmodels, Prophet.', curveness: 0.15, value: 3 },
+
+                { source: 'Etapa 3: Visualización como método de investigación', target: 'Visualizaciones web interactivas: D3.js, Plotly, Dash, Streamlit o Vega-Lite.', curveness: 0.15, value: 2 },
+                { source: 'Etapa 3: Visualización como método de investigación', target: 'Organizar datos cualitativos: NVivo, Atlas.ti, R Markdown, Jupyter Notebook.', curveness: 0.15, value: 2 }
+            ]
+        };
+
+        flowData.nodes.forEach(function (node) {
+            node.label = { show: true };
+        });
+
+        myChart.hideLoading();
+
+        var option = {
+            tooltip: {
+                formatter: function (params) {
+                    if (params.dataType === 'node' && params.data.tooltipInfo) {
+                        return params.data.tooltipInfo; 
+                    }
+                    if (params.dataType === 'node') {
+                         const categoryName = flowData.categories[params.data.category].name;
+                        return `**${params.name}**<br>Etapa: ${categoryName}`; 
+                    }
+                    return '';
+                },
+                backgroundColor: 'rgba(0, 0, 0, 0.7)', 
+                textStyle: {
+                    color: '#fff', 
+                    fontSize: 12,
+                    lineHeight: 18 
+                },
+                extraCssText: 'width: 280px; white-space: normal;' 
+            },
+            
+            animationDuration: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series: [
+                {
+                    name: 'Diagrama de Proceso',
+                    type: 'graph',
+                    legendHoverLink: true,
+                    layout: 'none', 
+                    data: flowData.nodes,
+                    links: flowData.links,
+                    categories: flowData.categories,
+                    roam: true, 
+                    label: {
+                        position: 'inside',
+                        formatter: function (params) {
+                            if (params.data.symbolSize < sizeFase - 50) {
+                                return params.data.shortName;
+                            }
+                            const title = params.data.name.replace('Etapa ', 'E. ').replace(': ', ':\n').replace(' y ', ' y\n');
+                            return title;
+                        },
+                        fontSize: 9, 
+                        color: '#333',
+                        fontWeight: 'bold'
+                    },
+                    itemStyle: {
+                        color: function(params) {
+                            return flowData.categories[params.data.category].itemStyle.color;
+                        }
+                    },
+                    lineStyle: {
+                        color: '#95a5a6', 
+                        curveness: 0.25, 
+                        width: 1.5,
+                        type: 'solid'
+                    },
+                    edgeSymbol: ['none', 'arrow'],
+                    edgeSymbolSize: 8,
+                    emphasis: {
+                        focus: 'adjacency',
+                        lineStyle: {
+                            width: 5
+                        }
+                    }
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+      </script>
+    </section>
+
+    <!-- ejemplo sacado de https://echarts.apache.org/examples/en/editor.html?c=graph-->
+
+
+    <!-- cita final -->
+
+    <div class="cita">
+      <img src="img/fondo.png" alt="Fondo colorido">
+      <h1>Entre relatos y visualizaciones, lo digital nos muestra la frágil línea entre exploración y riesgo en la experiencia humana. <br> Lo digital hace visible lo que la experiencia oculta.</h1>
+    </div>
+
+    <!-- referencias-->
+    <section id="referencias" class="seccion">
+      <h2>Referencias</h2>
+      <p>Berning, M., Hardon, A., Krieg, L. J., Azzi, M., & Colombo, G. (2016). Visualising Erowid [Sitio web]. Chemical Youth, University of Amsterdam. https://chemicalyouth.org/visualising-erowid/</p>
+
+      <p>Erowid Center. (s.f.). Erowid – Documenting the complex relationship between humans & psychoactives. Recuperado el 9 de octubre de 2025, de  https://www.erowid.org/</p>
+
+      <p>Hardon, A. (s.f.). Anita Hardon [Perfil profesional]. Amsterdam Institute for Global Health and Development. https://www.aighd.org/people/anita-hardon/</p>
+
+      <p>Vega, R., & Rebolledo, F. (2025). Imagen computacional [Diapositivas de Presentación]. Curso Pensamiento Computacional. Escuela de Diseño, Pontificia Universidad Católica de Chile.</p>
+    </section>
+
+</div>
+
+</body>
+</html>
